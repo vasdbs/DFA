@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.home.aibbehave60.Main4Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.12">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.34"
+                android:onClick="onData"
+                android:text="Data Stats" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onModel"
+                android:text="Model Results" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/go" />
+
+        <TextView
+            android:id="@+id/wordView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correlation"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_weight="0.10" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:text="98 %"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
